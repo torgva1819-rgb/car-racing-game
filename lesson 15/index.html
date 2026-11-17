@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ავტორბოლა - Racing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score-board">ქულა: <span id="score">0</span></div>
+        
+        <div id="start-screen" class="overlay">
+            <h1>🏎️ ავტორბოლა</h1>
+            <p>მართეთ მანქანა მარცხენა (⬅️) და მარჯვენა (➡️) ისრებით</p>
+            <button id="start-btn">თამაშის დაწყება</button>
+        </div>
+
+        <div id="game-over-screen" class="overlay hidden">
+            <h1>💥 ავარია!</h1>
+            <p>თქვენი ქულა: <span id="final-score">0</span></p>
+            <button id="restart-btn">თავიდან დაწყება</button>
+        </div>
+
+        <div class="road" id="road">
+            <div class="player-car" id="player"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
